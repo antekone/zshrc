@@ -1,4 +1,9 @@
 source ~/.zshrc-ohmyzsh
+
+export EDITOR="vim"
+export PATH=$PATH:/home/antek/bin/emacs/bin
+export TERM=xterm-256color
+
 alias gt="git status"
 alias zshrc="$EDITOR ~/.zsh/.zshrc; source ~/.zshrc"
 

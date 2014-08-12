@@ -58,3 +58,5 @@ bindkey "\ec" _zshrc_GitCommit     # Alt+c
 bindkey "\ed" _zshrc_GitDiff       # Alt+d
 bindkey "\e[1;3B" _zshrc_GitPull   # Alt+Down arrow
 bindkey "\e[1;3A" _zshrc_GitPush   # Alt+Up arrow
+
+setopt nohup

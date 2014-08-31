@@ -1,4 +1,6 @@
 source ~/.zshrc-ohmyzsh
+source ~/.zsh-local
+
 alias gt="git status"
 alias zshrc="vim ~/.zsh/.zshrc; source ~/.zshrc"
 alias m="./make.sh"
@@ -60,3 +62,4 @@ bindkey "\e[1;3B" _zshrc_GitPull   # Alt+Down arrow
 bindkey "\e[1;3A" _zshrc_GitPush   # Alt+Up arrow
 
 setopt nohup
+setopt append_history no_inc_append_history no_share_history

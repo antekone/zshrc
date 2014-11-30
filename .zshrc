@@ -1,6 +1,7 @@
 source ~/.zshrc-ohmyzsh
 source ~/.zsh-local
 
+alias gdb="gdb -q"
 alias gt="git status"
 alias zshrc="vim ~/.zsh/.zshrc; source ~/.zshrc"
 alias m="./make.sh"

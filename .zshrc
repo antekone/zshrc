@@ -10,7 +10,7 @@ alias r="./run.sh"
 alias d="./debug.sh"
 
 export EDITOR="vim"
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 
 _zshrc_GitStatus() {

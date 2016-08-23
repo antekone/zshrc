@@ -14,6 +14,7 @@ alias gsu="git submodule update --init --recursive --remote"
 export EDITOR="vim"
 #export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 export PATH="$PATH"
+#export TERM="xterm-256color"
 
 _zshrc_GitStatus() {
     echo "git status"

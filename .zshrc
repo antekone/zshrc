@@ -13,46 +13,49 @@ alias r="./run.sh"
 alias d="./debug.sh"
 alias start-console-java="source ~/.zsh/start-console-java.sh"
 alias gcloud-start="source ~/.zsh/gcloud-start.sh"
+alias gsu="git submodule update --init --recursive --remote"
+#alias gcloud-start="unset _JAVA_OPTIONS; export PATH=/usr/local/bin/py2:$PATH; source /home/antek/dev/google-cloud-sdk/path.zsh.inc"
 
 export PATH="$PATH:/home/antek/.gem/ruby/2.2.0/bin"
 export EDITOR="vim"
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
 #export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
+export PATH="$PATH"
 
 _zshrc_GitStatus() {
-	echo "git status"
-	git status
-	zle accept-line
+    echo "git status"
+    git status
+    zle accept-line
 }
 
 _zshrc_GitPull() {
-	echo "git pull"
-	git pull
-	zle accept-line
+    echo "git pull"
+    git pull
+    zle accept-line
 }
 
 _zshrc_GitPush() {
-	echo "git push"
-	git push
-	zle accept-line
+    echo "git push"
+    git push
+    zle accept-line
 }
 
 _zshrc_GitAddA() {
-	echo "git add -a"
-	git add -a
-	zle accept-line
+    echo "git add -a"
+    git add -a
+    zle accept-line
 }
 
 _zshrc_GitCommit() {
-	echo "git commit"
-	git commit
-	zle accept-line
+    echo "git commit"
+    git commit
+    zle accept-line
 }
 
 _zshrc_GitDiff() {
-	echo "git diff"
-	git diff
-	zle accept-line
+    echo "git diff"
+    git diff
+    zle accept-line
 }
 
 zle -N _zshrc_GitStatus
@@ -84,3 +87,4 @@ bindkey "\e[1;3A" _zshrc_GitPush   # Alt+Up arrow
 
 setopt nohup
 setopt append_history no_inc_append_history no_share_history
+
